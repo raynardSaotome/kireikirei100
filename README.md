@@ -1,2 +1,2 @@
-# kireikirei100
+# kireikirei
 Created with CodeSandbox

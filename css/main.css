@@ -1,0 +1,142 @@
+.chapters {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+
+.fade {
+  visibility: hidden;
+}
+
+#debug {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #777777;
+  opacity: 0.75;
+}
+
+#elemHandWashSuccess {
+  background-image: url("../img/successbgrose001.png");
+}
+
+#elemHandWashReady {
+  background-image: url("../img/handwashreadybg.png");
+}
+
+#elemHandWashReady_canvas {
+  background-image: url("../img/handwashready.png");
+}
+
+#elemHandWashing_canvas {
+  background-image: url("../img/handwashing.png");
+}
+
+#elemHandWashFault_canvas {
+  background-image: url("../img/handwashfault.png");
+}
+
+#elemStopFlow_canvas {
+  background-image: url("../img/handwashstopflow.png");
+}
+
+#elemStopFlow_canvas {
+  background-image: url("../img/handwashstopflow.png");
+}
+
+#elemStopFlow {
+  background-image: url("../img/handwashstopflowbg.png");
+}
+
+@keyframes blink {
+  0% {
+    visibility: hidden;
+    opacity: 0.2;
+  }
+
+  25% {
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 0.75;
+  }
+
+  75% {
+    visibility: visible;
+    opacity: 0.4;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0.2;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fin {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+.fout {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.blink2 {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#ddistDistance::after {
+  content: "mm";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
